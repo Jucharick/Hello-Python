@@ -12,11 +12,11 @@ def f(x):
 
 g = f # в переменную можно положить функцию
 
-print(type(f))
-print(type(g))
+# print(type(f))
+# print(type(g))
 
-print(g(4))
-print(f(4))
+# print(g(4))
+# print(f(4))
 
 
 
@@ -31,14 +31,20 @@ def calc2(x):
 def math(op, x):
     print(op(x))
 
-math(calc2, 10)
-math(calc1, 10)
+# math(calc2, 10)
+# math(calc1, 10)
 
 
 def sum(x, y):
     return x+y
 
+# sum = lambda x, y: x+y # логика работы такая же, как у def sum
+
 def mult(x, y):
     return x*y
 
 def calc(op, a, b): # op  - отдельная функция
+    # print(op(a,b))
+    return op(a,b)
+
+print(calc(lambda x, y: x+y, 4, 5))
