@@ -14,5 +14,5 @@ print(list1)
 def f(x):
     return x**3
 
-list2 = [f(i) for i in range(1, 21) if(i%2 == 0)] 
+list2 = [(i, f(i)) for i in range(1, 21) if(i%2 == 0)] 
 print(list2)
