@@ -37,7 +37,7 @@ data = where(lambda e: not e % 2, data)
 data = list(select(lambda e: (e, e**2), data))
 
 
-# map
+# map() and filter()
 
 data = '1 2 3 5 8 15 23 38'.split()
 data = list(map(int, data))
