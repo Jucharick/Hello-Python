@@ -6,5 +6,5 @@
 
 data = [x for x in range(10)]
 
-res = list(filter(lambda x: x%2, data)) # x%2==0 тоже самое что x%2  / filter() - проверяет условие
+res = list(filter(lambda x: not x%2, data)) # x%2==0 тоже самое что x%2  / filter() - проверяет условие
 print(res)
